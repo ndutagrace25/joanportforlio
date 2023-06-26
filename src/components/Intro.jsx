@@ -3,7 +3,7 @@ import developer from "../images/developer.jpg";
 
 const Intro = () => {
   return (
-    <div className="px-5 mx-5 mt-5 pb-5">
+    <div className="px-5 mx-5 mt-5 pb-3">
       <div className="d-flex justify-content-center flex-column align-items-center">
         <div className="intro-width">
           <div className="d-flex justify-content-between pt-3">
