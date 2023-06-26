@@ -16,7 +16,7 @@ const Intro = () => {
                 <p className="fs-4 intro-info">
                   I am a{" "}
                   <span className="fw-bold">Front-End Software Engineer</span>{" "}
-                  with <span className="fw-bold">6+ years</span> of experience
+                  with <span className="fw-bold">3+ years</span> of experience
                   in designing & building both web and mobile application
                 </p>
               </div>
