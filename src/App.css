@@ -23,6 +23,12 @@ body {
   height: 200px;
 }
 
+.btn:hover {
+  color: #fff !important;
+  text-decoration: none;
+  background-color: #ffd43a;
+}
+
 @media screen and (max-width: 480px) {
   .nav-icon {
     padding: 10px !important;
