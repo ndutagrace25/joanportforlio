@@ -3,7 +3,7 @@ import developer from "../images/developer.jpg";
 
 const Intro = () => {
   return (
-    <div className="px-5 mx-5 mt-5">
+    <div className="px-5 mx-5 mt-5 pb-5">
       <div className="d-flex justify-content-center flex-column align-items-center">
         <div className="intro-width">
           <div className="d-flex justify-content-between pt-3">
@@ -11,12 +11,12 @@ const Intro = () => {
               <div className="text-uppercase primary-text-color">
                 <h6 className="name-itro">Hello there my name is:</h6>
               </div>
-              <h1 className="py-3 fw-bold actual-name">Joan Aluka</h1>
+              <h1 className="py-3 fw-bold actual-name">Hey There</h1>
               <div>
                 <p className="fs-4 intro-info">
                   I am a{" "}
                   <span className="fw-bold">Front-End Software Engineer</span>{" "}
-                  with <span className="fw-bold">4+ years</span> of experience
+                  with <span className="fw-bold">6+ years</span> of experience
                   in designing & building both web and mobile application
                 </p>
               </div>

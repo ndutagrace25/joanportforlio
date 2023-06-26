@@ -19,6 +19,10 @@ body {
   background-color: #ffd43a;
 }
 
+.yellow-text {
+  color: #ffd43a;
+}
+
 .intro-section {
   height: 200px;
 }
@@ -27,6 +31,22 @@ body {
   color: #fff !important;
   text-decoration: none;
   background-color: #ffd43a;
+}
+
+.about-header {
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+p {
+  text-align: justify;
+}
+.about-info {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.skill-size {
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -81,5 +101,36 @@ body {
   }
   .btn-font {
     font-size: 0.5rem !important;
+  }
+
+  .about-section {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  .skill-cards {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+
+  .about-header {
+    font-size: 0.8rem;
+  }
+
+  .skill-header {
+    font-size: 1.5rem;
+  }
+  .about-info {
+    font-size: 0.86rem;
+  }
+
+  .skill-card {
+    padding-left: 10px !important;
+    font-size: 0.5rem !important;
+    width: 130px !important;
+  }
+
+  .skill-size {
+    font-size: 0.5rem;
+    font-weight: 900;
   }
 }

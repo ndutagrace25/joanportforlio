@@ -1,11 +1,14 @@
 import React from "react";
-import { Navbar, Intro } from "../components";
+import { Navbar, Intro, AboutMe } from "../components";
 
 const Home = () => {
   return (
-    <div className="container-fluid">
-      <Navbar />
-      <Intro />
+    <div className="">
+      <div className="container-fluid">
+        <Navbar />
+        <Intro />
+      </div>
+      <AboutMe />
     </div>
   );
 };
