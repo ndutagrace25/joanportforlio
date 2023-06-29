@@ -1,8 +1,9 @@
 import React from "react";
 import developer from "../images/developer.jpg";
 import Zoom from "react-reveal/Zoom";
+import { Link } from "react-router-dom";
 
-const Intro = () => {
+const Intro = ({}) => {
   return (
     <div className="px-5 mx-5 mt-5 pb-3">
       <div className="d-flex justify-content-center flex-column align-items-center">
@@ -27,11 +28,16 @@ const Intro = () => {
               </Zoom>
 
               <div className="download-section">
-                <button className="text-uppercase btn primary-color text-white py-3 fw-bold download-btn">
+                <Link
+                  className="text-uppercase btn primary-color text-white py-3 fw-bold download-btn"
+                  to="/files//Joanne.pdf"
+                  target="_blank"
+                  download
+                >
                   <span className="btn-font">
                     Download Resume <i className="fas fa-download ps-2"></i>
                   </span>
-                </button>
+                </Link>
               </div>
             </div>
             <div className="col-md-6 mobile-image-hide d-flex justify-content-center">
