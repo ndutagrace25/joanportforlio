@@ -11,7 +11,7 @@ const Intro = () => {
               <div className="text-uppercase primary-text-color">
                 <h6 className="name-itro">Hello there my name is:</h6>
               </div>
-              <h1 className="py-3 fw-bold actual-name">Joan Aluka</h1>
+              <h1 className="py-3 fw-bold actual-name">Joanne Aluka</h1>
               <div>
                 <p className="fs-4 intro-info">
                   I am a{" "}

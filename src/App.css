@@ -16,6 +16,11 @@ html {
   background: hsl(0, 2%, 50%);
 }
 
+.menu-page-bg {
+  height: 100vh !important;
+  background-image: linear-gradient(to left, #ffffff 75%, #464cac 25%);
+}
+
 .name-itro {
   font-size: 22px;
   font-weight: bold;
@@ -65,6 +70,10 @@ p {
   position: -webkit-sticky; /* Safari & IE */
   position: fixed;
   z-index: 1;
+}
+
+.menu-title {
+  font-size: 150px;
 }
 
 @media screen and (max-width: 480px) {
@@ -151,5 +160,9 @@ p {
   .skill-size {
     font-size: 0.5rem;
     font-weight: 900;
+  }
+  .menu-page-bg {
+    height: 100vh !important;
+    background-image: linear-gradient(to top, #ffffff 88%, #464cac 10%);
   }
 }

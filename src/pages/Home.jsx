@@ -9,17 +9,21 @@ const Home = () => {
   return (
     <div className="main-container">
       {currentPage === "Menu" ? (
-        <div className="container-fluid">
-          <Fade top delay={255}>
-            <Navbar
-              setCurrentPage={() => setCurrentPage("Home")}
-              icon="fa-sharp fa-regular fa-xmark"
-              name_bg="bg-white shadow-sm"
-              menu_bg="bg-secondary"
-            />
-            <Menu />
-          </Fade>
-        </div>
+        <Fade top delay={255}>
+          <div className="menu-page-bg primary-color">
+            <div className="container-fluid">
+              <Navbar
+                setCurrentPage={() => setCurrentPage("Home")}
+                icon="fa-sharp fa-regular fa-xmark"
+                name_bg="bg-white shadow-sm"
+                menu_bg="bg-secondary"
+              />
+              <div className="d-flex justify-content-center mt-4">
+                <Menu />
+              </div>
+            </div>
+          </div>
+        </Fade>
       ) : (
         <>
           <Fade bottom delay={255}>
