@@ -1,6 +1,7 @@
 import React from "react";
 import obscura from "../images/obscura.jpg";
 import environmental from "../images/environmental.jpg";
+import powwater from "../images/powwater.jpg";
 
 const Projects = ({ projectsDivRef }) => {
   return (
@@ -86,6 +87,43 @@ const Projects = ({ projectsDivRef }) => {
               >
                 <i class="fas fa-external-link"></i>
                 <span className="mx-3">View live Website</span>
+              </a>
+            </div>
+          </div>
+          <div className="d-flex justify-content-between flex-wrap project-card my-5">
+            <a
+              className="bg-secondary p-3 col-md-6 image-card"
+              href="https://play.google.com/store/apps/details?id=com.powwater.customer&hl=en&gl=US"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                alt="project"
+                src={powwater}
+                className="img-fluid project-image rounded"
+                height={100}
+              />
+            </a>
+            <div className="col-md-5 px-3">
+              <div className="primary-text-color fw-bold my-3">
+                #REACT NATIVE
+              </div>
+              <h5 className="fw-bold text-capitalize">PowWater Mobile App</h5>
+              <p>
+                Powwater mobile app helps people in Kenya to order bowser water
+                at the comfort of their homes.
+              </p>
+              <div className="my-2">
+                <i className="fab fa-react fa-lg text-info"></i>
+              </div>
+              <a
+                className="fw-bold text-uppercase"
+                href="https://play.google.com/store/apps/details?id=com.powwater.customer&hl=en&gl=US"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fas fa-external-link"></i>
+                <span className="mx-3">Download The App</span>
               </a>
             </div>
           </div>
