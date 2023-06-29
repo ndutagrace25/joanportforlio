@@ -12,6 +12,18 @@ html {
   background: transparent; /* Optional: just make scrollbar invisible */
 }
 
+.bg-maroon {
+  background-color: #9c0f05;
+}
+.bg-pink {
+  background-color: #e010b7;
+}
+
+.project-image {
+  height: 300px;
+  /* border-radius: 5%; */
+}
+
 .menu-page-bg {
   height: 100vh !important;
   background-image: linear-gradient(to left, #ffffff 75%, #464cac 25%);
@@ -202,5 +214,12 @@ p {
   }
   .arrange-desktop {
     display: none;
+  }
+  .project-image {
+    height: 100px;
+  }
+
+  .project-card {
+    font-size: 0.86rem !important;
   }
 }

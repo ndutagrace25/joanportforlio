@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 const Skills = ({ skillsDivRef }) => {
   return (
     <div
-      className="primary-color mt-5 p-5 mb-5 about-section"
+      className="primary-color mt-5 p-5 about-section"
       ref={skillsDivRef}
     >
       <Fade bottom delay={500}>
