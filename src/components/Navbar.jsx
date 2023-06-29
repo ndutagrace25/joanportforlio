@@ -8,9 +8,9 @@ const Navbar = () => {
           J.A
         </span>
       </div>
-      <div className=" ">
+      <div className="pe-3">
         <div
-          className="primary-color p-3 rounded nav-icon"
+          className="primary-color p-3 rounded nav-icon fixed-icon"
           style={{ cursor: "pointer" }}
         >
           <i className="fas fa-bars fa-2xl text-white icon-size"></i>

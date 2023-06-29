@@ -3,7 +3,7 @@ import { Navbar, Intro, AboutMe } from "../components";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="main-container">
       <div className="container-fluid">
         <Navbar />
         <Intro />

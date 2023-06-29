@@ -3,6 +3,18 @@
 body {
   font-family: "Montserrat", sans-serif !important;
 }
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 2%, 50%);
+}
 
 .name-itro {
   font-size: 22px;
@@ -47,6 +59,12 @@ p {
 
 .skill-size {
   font-size: 0.8rem;
+}
+
+.fixed-icon {
+  position: -webkit-sticky; /* Safari & IE */
+  position: fixed;
+  z-index: 1;
 }
 
 @media screen and (max-width: 480px) {
