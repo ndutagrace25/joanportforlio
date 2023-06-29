@@ -1,5 +1,6 @@
 import React from "react";
 import developer from "../images/developer.jpg";
+import Zoom from "react-reveal/Zoom";
 
 const Intro = () => {
   return (
@@ -11,15 +12,20 @@ const Intro = () => {
               <div className="text-uppercase primary-text-color">
                 <h6 className="name-itro">Hello there my name is:</h6>
               </div>
-              <h1 className="py-3 fw-bold actual-name">Joanne Aluka</h1>
-              <div>
-                <p className="fs-4 intro-info">
-                  I am a{" "}
-                  <span className="fw-bold">Front-End Software Engineer</span>{" "}
-                  with <span className="fw-bold">3+ years</span> of experience
-                  in designing & building both web and mobile application
-                </p>
-              </div>
+              <Zoom bottom delay={320}>
+                <h1 className="py-3 fw-bold actual-name">Joanne Aluka</h1>
+              </Zoom>
+              <Zoom left delay={325}>
+                <div>
+                  <p className="fs-4 intro-info">
+                    I am a{" "}
+                    <span className="fw-bold">Front-End Software Engineer</span>{" "}
+                    with <span className="fw-bold">3+ years</span> of experience
+                    in designing & building both web and mobile application
+                  </p>
+                </div>
+              </Zoom>
+
               <div className="download-section">
                 <button className="text-uppercase btn primary-color text-white py-3 fw-bold download-btn">
                   <span className="btn-font">

@@ -11,10 +11,6 @@ html {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-  background: hsl(0, 2%, 50%);
-}
 
 .menu-page-bg {
   height: 100vh !important;

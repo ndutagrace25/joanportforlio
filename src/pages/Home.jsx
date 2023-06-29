@@ -1,10 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
 import { Navbar, Intro, AboutMe } from "../components";
 import { Menu } from ".";
 import Fade from "react-reveal/Fade";
 
 const Home = () => {
   const [currentPage, setCurrentPage] = useState(null);
+  const hiddenDivRef = useRef(null);
+
+  const scrollToDiv = () => {
+    setCurrentPage(null);
+  };
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useLayoutEffect(() => {
+    if (hiddenDivRef.current) {
+      if (!currentPage) {
+        hiddenDivRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [currentPage]);
 
   return (
     <div className="main-container">
@@ -19,15 +36,15 @@ const Home = () => {
                 menu_bg="bg-secondary"
               />
               <div className="d-flex justify-content-center mt-4">
-                <Menu />
+                <Menu scrollToDiv={scrollToDiv} />
               </div>
             </div>
           </div>
         </Fade>
       ) : (
-        <>
-          <Fade bottom delay={255}>
-            <div className="container-fluid">
+        <div>
+          <div className="container-fluid">
+            <Fade bottom delay={255}>
               <Navbar
                 setCurrentPage={() => setCurrentPage("Menu")}
                 icon="fas fa-bars"
@@ -35,10 +52,10 @@ const Home = () => {
                 menu_bg="primary-color"
               />
               <Intro />
-            </div>
-            <AboutMe />
-          </Fade>
-        </>
+            </Fade>
+          </div>
+          <AboutMe hiddenDivRef={hiddenDivRef} />
+        </div>
       )}
     </div>
   );

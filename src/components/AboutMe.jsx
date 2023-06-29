@@ -1,9 +1,12 @@
 import React from "react";
 
-const AboutMe = () => {
+const AboutMe = ({ hiddenDivRef }) => {
   return (
-    <div className="primary-color mt-5 p-5 mb-5 about-section">
-      <div className="container-fluid pt-3 px-5">
+    <div
+      className="primary-color mt-5 p-5 mb-5 about-section"
+      ref={hiddenDivRef}
+    >
+      <div className="container-fluid pt-3 px-5" id="aboutme">
         <h6 className="yellow-text fw-bold about-header">ABOUT ME & MY WORK</h6>
         <div className="d-flex justify-content-between flex-wrap">
           <div className="col-md-6">

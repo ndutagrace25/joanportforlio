@@ -1,6 +1,6 @@
 import React from "react";
 
-const Menu = () => {
+const Menu = ({ scrollToDiv }) => {
   return (
     <div className="menu-mobile">
       <h1 className="text-black fw-bold menu-title">MENU</h1>
@@ -17,27 +17,31 @@ const Menu = () => {
             className="d-flex flex-row align-items-center py-3"
             style={{ cursor: "pointer" }}
           >
-            <i class="fa-regular fa-message fa-lg primary-text-color"></i>
+            <i className="fa-regular fa-message fa-lg primary-text-color"></i>
             <div className="ps-3 fw-bold">+254 718 149 079</div>
           </div>
           <div
             className="d-flex flex-row align-items-center pb-3"
             style={{ cursor: "pointer" }}
           >
-            <i class="fa-brands fa-linkedin fa-lg primary-text-color"></i>
+            <i className="fa-brands fa-linkedin fa-lg primary-text-color"></i>
             <div className="ps-3 fw-bold">Linkedin</div>
           </div>
           <div
             className="d-flex flex-row align-items-center"
             style={{ cursor: "pointer" }}
           >
-            <i class="fa-brands fa-square-github fa-lg primary-text-color"></i>
+            <i className="fa-brands fa-square-github fa-lg primary-text-color"></i>
             <div className="ps-3 fw-bold">Github</div>
           </div>
         </div>
         <div className="arrange-mobile arrange-mobile">
           <ul className="text-uppercase fw-bold menu-list">
-            <li className="pt-2" style={{ cursor: "pointer" }}>
+            <li
+              className="pt-2"
+              style={{ cursor: "pointer" }}
+              onClick={scrollToDiv}
+            >
               Skills
             </li>
             <li className="pt-2" style={{ cursor: "pointer" }}>
@@ -54,7 +58,11 @@ const Menu = () => {
         <div className="border-line  my-4 col-md-12"></div>
         <div className="arrange-desktop">
           <ul className="text-uppercase fw-bold menu-list">
-            <li className="pt-2" style={{ cursor: "pointer" }}>
+            <li
+              className="pt-2"
+              style={{ cursor: "pointer" }}
+              onClick={scrollToDiv}
+            >
               Skills
             </li>
             <li className="pt-2" style={{ cursor: "pointer" }}>
@@ -80,21 +88,21 @@ const Menu = () => {
             className="d-flex flex-row align-items-center py-3"
             style={{ cursor: "pointer" }}
           >
-            <i class="fa-regular fa-message fa-lg primary-text-color"></i>
+            <i className="fa-regular fa-message fa-lg primary-text-color"></i>
             <div className="ps-3 fw-bold">+254 718 149 079</div>
           </div>
           <div
             className="d-flex flex-row align-items-center pb-3"
             style={{ cursor: "pointer" }}
           >
-            <i class="fa-brands fa-linkedin fa-lg primary-text-color"></i>
+            <i className="fa-brands fa-linkedin fa-lg primary-text-color"></i>
             <div className="ps-3 fw-bold">Linkedin</div>
           </div>
           <div
             className="d-flex flex-row align-items-center"
             style={{ cursor: "pointer" }}
           >
-            <i class="fa-brands fa-square-github fa-lg primary-text-color"></i>
+            <i className="fa-brands fa-square-github fa-lg primary-text-color"></i>
             <div className="ps-3 fw-bold">Github</div>
           </div>
         </div>
