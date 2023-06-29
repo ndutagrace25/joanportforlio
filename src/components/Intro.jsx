@@ -39,7 +39,6 @@ const Intro = () => {
                 className="img-fluid rounded"
                 src={developer}
                 alt="developer"
-                // height="100"
                 width="300"
               />
             </div>

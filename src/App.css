@@ -27,6 +27,10 @@ html {
 .primary-text-color {
   color: #464cac;
 }
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
 
 .yellow-bg {
   background-color: #ffd43a;
