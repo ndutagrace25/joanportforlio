@@ -48,11 +48,15 @@ const Menu = ({ scrollToDiv }) => {
             <li
               className="pt-2"
               style={{ cursor: "pointer" }}
-              onClick={scrollToDiv}
+              onClick={() => scrollToDiv("skills")}
             >
               Skills
             </li>
-            <li className="pt-2" style={{ cursor: "pointer" }}>
+            <li
+              className="pt-2"
+              style={{ cursor: "pointer" }}
+              onClick={() => scrollToDiv("projects")}
+            >
               Projects
             </li>
             <li className="pt-2" style={{ cursor: "pointer" }}>
@@ -69,11 +73,15 @@ const Menu = ({ scrollToDiv }) => {
             <li
               className="pt-2"
               style={{ cursor: "pointer" }}
-              onClick={scrollToDiv}
+              onClick={() => scrollToDiv("skills")}
             >
               Skills
             </li>
-            <li className="pt-2" style={{ cursor: "pointer" }}>
+            <li
+              className="pt-2"
+              style={{ cursor: "pointer" }}
+              onClick={() => scrollToDiv("projects")}
+            >
               Projects
             </li>
             <li className="pt-2" style={{ cursor: "pointer" }}>

@@ -1,7 +1,7 @@
 import React from "react";
 
-const Projects = () => {
-  return <div>Projects</div>;
+const Projects = ({ projectsDivRef }) => {
+  return <div ref={projectsDivRef}>Projects</div>;
 };
 
 export default Projects;

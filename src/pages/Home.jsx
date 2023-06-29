@@ -1,13 +1,16 @@
 import React, { useState, useRef, useLayoutEffect } from "react";
-import { Navbar, Intro, AboutMe } from "../components";
+import { Navbar, Intro, Skills, Projects } from "../components";
 import { Menu } from ".";
 import Fade from "react-reveal/Fade";
 
 const Home = () => {
   const [currentPage, setCurrentPage] = useState(null);
-  const hiddenDivRef = useRef(null);
+  const [activeDiv, setActiveDiv] = useState(null);
+  const skillsDivRef = useRef(null);
+  const projectsDivRef = useRef(null);
 
-  const scrollToDiv = () => {
+  const scrollToDiv = (active_div) => {
+    setActiveDiv(active_div);
     setCurrentPage(null);
   };
 
@@ -16,12 +19,18 @@ const Home = () => {
   }, []);
 
   useLayoutEffect(() => {
-    if (hiddenDivRef.current) {
+    console.log(activeDiv, "activeDivactiveDiv");
+    if (skillsDivRef.current && activeDiv === "skills") {
       if (!currentPage) {
-        hiddenDivRef.current.scrollIntoView({ behavior: "smooth" });
+        skillsDivRef.current.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }, [currentPage]);
+    if (projectsDivRef.current && activeDiv === "projects") {
+      if (!currentPage) {
+        projectsDivRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [currentPage, activeDiv]);
 
   return (
     <div className="main-container">
@@ -44,17 +53,16 @@ const Home = () => {
       ) : (
         <div>
           <div className="container-fluid">
-            <Fade bottom delay={255}>
-              <Navbar
-                setCurrentPage={() => setCurrentPage("Menu")}
-                icon="fas fa-bars"
-                name_bg="yellow-bg"
-                menu_bg="primary-color"
-              />
-              <Intro />
-            </Fade>
+            <Navbar
+              setCurrentPage={() => setCurrentPage("Menu")}
+              icon="fas fa-bars"
+              name_bg="yellow-bg"
+              menu_bg="primary-color"
+            />
+            <Intro />
           </div>
-          <AboutMe hiddenDivRef={hiddenDivRef} />
+          <Skills skillsDivRef={skillsDivRef} />
+          <Projects projectsDivRef={projectsDivRef} />
         </div>
       )}
     </div>

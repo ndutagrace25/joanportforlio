@@ -67,9 +67,9 @@ p {
 }
 
 .fixed-icon {
-  position: -webkit-sticky; /* Safari & IE */
-  position: fixed;
-  z-index: 1;
+  position: -webkit-fixed !important; /* Safari & IE */
+  position: fixed !important;
+  z-index: 1 !important;
 }
 
 .menu-title {

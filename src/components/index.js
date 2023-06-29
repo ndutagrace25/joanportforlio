@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
-import AboutMe from "./AboutMe";
+import Skills from "./Skills";
 import Intro from "./Intro";
 import Projects from "./Projects";
 
-export { Navbar, Intro, AboutMe, Projects };
+export { Navbar, Intro, Skills, Projects };
