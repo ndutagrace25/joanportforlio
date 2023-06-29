@@ -1,5 +1,12 @@
 import React, { useState, useRef, useLayoutEffect } from "react";
-import { Navbar, Intro, Skills, Projects } from "../components";
+import {
+  Navbar,
+  Intro,
+  Skills,
+  Projects,
+  AboutMe,
+  ContactMe,
+} from "../components";
 import { Menu } from ".";
 import Fade from "react-reveal/Fade";
 
@@ -8,6 +15,8 @@ const Home = () => {
   const [activeDiv, setActiveDiv] = useState(null);
   const skillsDivRef = useRef(null);
   const projectsDivRef = useRef(null);
+  const aboutDivRef = useRef(null);
+  const contactDivRef = useRef(null);
 
   const scrollToDiv = (active_div) => {
     setActiveDiv(active_div);
@@ -28,6 +37,11 @@ const Home = () => {
     if (projectsDivRef.current && activeDiv === "projects") {
       if (!currentPage) {
         projectsDivRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    if (aboutDivRef.current && activeDiv === "about") {
+      if (!currentPage) {
+        aboutDivRef.current.scrollIntoView({ behavior: "smooth" });
       }
     }
   }, [currentPage, activeDiv]);
@@ -63,6 +77,8 @@ const Home = () => {
           </div>
           <Skills skillsDivRef={skillsDivRef} />
           <Projects projectsDivRef={projectsDivRef} />
+          <AboutMe aboutDivRef={aboutDivRef}/>
+          <ContactMe contactDivRef={contactDivRef}/>
         </div>
       )}
     </div>

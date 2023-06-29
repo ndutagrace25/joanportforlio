@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 
 const Projects = ({ projectsDivRef }) => {
   return (
-    <div ref={projectsDivRef} className="bg-light mb-5 py-5">
+    <div ref={projectsDivRef} className="bg-light py-5">
       <div className="container">
         <h5 className="text-uppercase fw-bold primary-text-color">
           Featured Projects

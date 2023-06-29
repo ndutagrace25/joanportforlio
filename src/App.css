@@ -102,6 +102,10 @@ p {
 .arrange-mobile {
   display: none;
 }
+
+.bg-dark {
+  background-color: #3c394a;
+}
 @media screen and (max-width: 480px) {
   .nav-icon {
     padding: 10px !important;
@@ -221,5 +225,9 @@ p {
 
   .project-card {
     font-size: 0.86rem !important;
+  }
+
+  .about-m {
+    margin-top: 20px;
   }
 }
