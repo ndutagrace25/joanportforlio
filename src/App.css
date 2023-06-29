@@ -76,6 +76,20 @@ p {
   font-size: 150px;
 }
 
+.menu-list {
+  font-size: 20px;
+}
+
+.border-line {
+  display: none;
+}
+
+.arrange-desktop {
+  display: block;
+}
+.arrange-mobile {
+  display: none;
+}
 @media screen and (max-width: 480px) {
   .nav-icon {
     padding: 10px !important;
@@ -164,5 +178,29 @@ p {
   .menu-page-bg {
     height: 100vh !important;
     background-image: linear-gradient(to top, #ffffff 88%, #464cac 10%);
+  }
+  .menu-mobile {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .menu-title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .border-line {
+    display: block;
+    border-bottom: #464cac !important;
+    border-width: 1px !important;
+    border-bottom-style: solid !important;
+  }
+  .arrange-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .arrange-desktop {
+    display: none;
   }
 }
