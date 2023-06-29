@@ -1,8 +1,8 @@
 import React from "react";
 
-const ContactMe = () => {
+const ContactMe = ({contactDivRef}) => {
   return (
-    <div className="bg-dark p-5">
+    <div className="bg-dark p-5" ref={contactDivRef}>
       <div className="container rounded bg-white p-5">
         <h6 className="primary-text-color fw-bold about-header text-uppercase">
           Like What You See?

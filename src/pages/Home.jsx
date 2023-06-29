@@ -44,6 +44,11 @@ const Home = () => {
         aboutDivRef.current.scrollIntoView({ behavior: "smooth" });
       }
     }
+    if (aboutDivRef.current && activeDiv === "contact") {
+      if (!currentPage) {
+        aboutDivRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   }, [currentPage, activeDiv]);
 
   return (

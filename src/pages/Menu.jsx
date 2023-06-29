@@ -66,7 +66,11 @@ const Menu = ({ scrollToDiv }) => {
             >
               About Me
             </li>
-            <li className="pt-2" style={{ cursor: "pointer" }}>
+            <li
+              className="pt-2"
+              style={{ cursor: "pointer" }}
+              onClick={() => scrollToDiv("contact")}
+            >
               Contact Me
             </li>
           </ul>
@@ -95,7 +99,11 @@ const Menu = ({ scrollToDiv }) => {
             >
               About Me
             </li>
-            <li className="pt-2" style={{ cursor: "pointer" }}>
+            <li
+              className="pt-2"
+              style={{ cursor: "pointer" }}
+              onClick={() => scrollToDiv("contact")}
+            >
               Contact Me
             </li>
           </ul>
