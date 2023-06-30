@@ -82,8 +82,8 @@ const Home = () => {
           </div>
           <Skills skillsDivRef={skillsDivRef} />
           <Projects projectsDivRef={projectsDivRef} />
-          <AboutMe aboutDivRef={aboutDivRef}/>
-          <ContactMe contactDivRef={contactDivRef}/>
+          <AboutMe aboutDivRef={aboutDivRef} />
+          <ContactMe contactDivRef={contactDivRef} scrollToDiv={scrollToDiv} />
         </div>
       )}
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContactMe = ({contactDivRef}) => {
+const ContactMe = ({ contactDivRef, scrollToDiv }) => {
   return (
     <div className="bg-dark p-5 project-card contact-card" ref={contactDivRef}>
       <div className="container rounded bg-white p-5">
@@ -58,6 +58,36 @@ const ContactMe = ({contactDivRef}) => {
               <div className="ps-3 fw-bold">Github</div>
             </a>
           </div>
+        </div>
+      </div>
+      <div className="text-uppercase text-white fw-bold flex-row d-flex justify-content-center my-5 footer-menu">
+        <div
+          style={{ cursor: "pointer" }}
+          className="px-3"
+          onClick={() => scrollToDiv("skills")}
+        >
+          SKILLS
+        </div>
+        <div
+          style={{ cursor: "pointer" }}
+          className="px-3"
+          onClick={() => scrollToDiv("projects")}
+        >
+          Projects
+        </div>
+        <div
+          style={{ cursor: "pointer" }}
+          className="px-3"
+          onClick={() => scrollToDiv("about")}
+        >
+          About Me
+        </div>
+        <div
+          style={{ cursor: "pointer" }}
+          className="px-3"
+          onClick={() => scrollToDiv("contact")}
+        >
+          Contact Me
         </div>
       </div>
     </div>

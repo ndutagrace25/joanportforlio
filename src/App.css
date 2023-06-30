@@ -235,4 +235,12 @@ p {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
+
+  .icon-mobile {
+    width: 20px !important;
+  }
+
+  .footer-menu {
+    font-size: 0.61rem !important;
+  }
 }

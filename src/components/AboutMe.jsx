@@ -18,7 +18,7 @@ const AboutMe = ({ aboutDivRef }) => {
             onMouseEnter={() => setBgCard("bg-white")}
             onMouseLeave={() => setBgCard(null)}
           >
-            <div className="bg-black p-1 rounded col-md-1 mb-2 d-flex justify-content-center">
+            <div className="bg-black p-1 rounded col-md-1 mb-2 d-flex justify-content-center icon-mobile">
               <i className="fa-solid fa-terminal text-white"></i>
             </div>
             <p>
@@ -32,8 +32,8 @@ const AboutMe = ({ aboutDivRef }) => {
             onMouseEnter={() => setBgCardTwo("bg-white")}
             onMouseLeave={() => setBgCardTwo(null)}
           >
-            <div className="bg-black p-1 rounded col-md-1 mb-2 d-flex justify-content-center">
-              <i className="fa-solid fa-user text-white"></i>
+            <div className="bg-black p-1 rounded col-md-1 mb-2 d-flex justify-content-center icon-mobile">
+              <i className="fa-solid fa-user text-white "></i>
             </div>
             <p>
               When i'm not at my desk, i'll be out on the occasional road-trip
