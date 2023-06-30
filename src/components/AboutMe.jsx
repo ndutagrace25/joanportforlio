@@ -36,10 +36,9 @@ const AboutMe = ({ aboutDivRef }) => {
               <i className="fa-solid fa-user text-white "></i>
             </div>
             <p>
-              When i'm not at my desk, i'll be out on the occasional road-trip
-              or playing golf, recently i've started working on small
-              wood-working projects, and whenever i can, i enjoy hiking &
-              camping.
+              When I'm not at my desk, I'll be on the occasional road trip
+              enjoying hiking & camping. Hiking is where my love for adventure and my
+              connection with nature truly intertwine
             </p>
           </div>
         </div>
