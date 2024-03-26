@@ -1,4 +1,5 @@
 {
   "version": 2,
+  "builds": [{ "src": "src", "use": "npm:vercel-build" }],
   "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
