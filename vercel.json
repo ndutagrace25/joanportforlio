@@ -1,5 +1,17 @@
 {
   "version": 2,
-  "builds": [{ "src": "src", "use": "npm:vercel-build" }],
+  "builds": [
+    {
+      "src": "src",
+      "use": {
+        "builder": "vercel/node",
+        "config": {
+          "commands": {
+            "build": "npm config set legacy-peer-deps true && npm run build"
+          }
+        }
+      }
+    }
+  ],
   "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
