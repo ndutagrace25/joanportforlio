@@ -1,5 +1,5 @@
 {
   "version": 2,
   "builds": [{ "src": "src", "use": "npm:vercel-build" }],
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
