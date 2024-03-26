@@ -46,5 +46,7 @@ const AboutMe = ({ aboutDivRef }) => {
     </div>
   );
 };
+// 
+
 
 export default AboutMe;
