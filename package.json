@@ -18,10 +18,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "config set legacy-peer-deps true",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "preinstall": "config set legacy-peer-deps true"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
